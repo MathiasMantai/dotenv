@@ -21,7 +21,7 @@ class DotEnvParser
                 {
                     continue;
                 }
-                print($line);
+
                 putenv($line);
             }
         }
