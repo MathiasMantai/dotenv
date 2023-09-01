@@ -1,6 +1,6 @@
 <?php
 
-namespace M2\Dotenv;
+namespace MMantai\Dotenv;
 
 class DotEnvParser
 {

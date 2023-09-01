@@ -1,11 +1,11 @@
 {
-    "name": "m2/dotenv",
+    "name": "mmantai/dotenv",
     "type": "library",
     "description": "A lightweight dotenv file parser",
     "license": "GPL-3.0-or-later",
     "autoload": {
         "psr-4": {
-            "M2\\Dotenv\\": "src/"
+            "MMantai\\Dotenv\\": "src/"
         }
     },
     "authors": [
