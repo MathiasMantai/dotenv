@@ -1,6 +1,7 @@
 {
     "name": "mmantai/dotenv",
     "type": "library",
+    "version": "v0.0.1",
     "description": "A lightweight dotenv file parser",
     "license": "GPL-3.0-or-later",
     "autoload": {
