@@ -8,6 +8,9 @@ if(file_exists(__DIR__ . '/vendor/autoload.php'))
 use PHPUnit\Framework\TestCase;
 use Mmantai\Dotenv\DotEnvParser;
 
+/**
+ * test whether vars are parsed correctly
+ */
 final class DotEnvParserTest extends TestCase
 {
     public function testDotEnv()
