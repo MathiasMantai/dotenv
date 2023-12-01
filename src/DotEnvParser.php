@@ -5,12 +5,8 @@ namespace Mmantai\Dotenv;
 class DotEnvParser
 {
 
-    public function __construct(string $filePath)
-    {
-        $this->init($filePath);
-    }
 
-    public function init(string $filePath): void 
+    public static function init(string $filePath): void 
     {
         $file = fopen($filePath, "r");
         if($file)
@@ -22,7 +18,11 @@ class DotEnvParser
                     continue;
                 }
 
-                putenv($line);
+                //remove whitespace and linebreaks
+                $replace = ["\r\n","\n", "\r"];
+                $formatted_line = trim(str_replace($replace, "", $line));
+
+                putenv($formatted_line);
             }
         }
     }
